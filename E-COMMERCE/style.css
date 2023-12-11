@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600;700&display=swap');
+
+/* ---------- COLOR PALETTES ---------- */
+:root {
+  --earthyellow: #D7AE5E;
+  --gray: #8A8A8A;
+  --black: #222222;
+  --brown: #934B00;
+  --rufous: #A72608;
+  --white: #f8f8f8;
+}
+
+/* ---------- GENERAL ---------- */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Noto Sans', sans-serif;
+  background-color: var(--brown);
+}
+
+/* ---------- MAIN ---------- */
+#cont_nav_main{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5em 2em;
+  margin-bottom: 2em;
+  background-color: var(--black);
+}
+/* ---------- MENU NAV ---------- */
+.menu_nav{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1em;
+  margin-bottom: 8em;
+}
+.menu_nav > div > button{
+  text-align: center;
+  padding: 9px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 550;
+  letter-spacing: 1px;
+  color: var(--black);
+  background-color: var(--earthyellow);
+  border: none;
+}
+.menu_nav > div > button:hover{
+  background-color: var(--gray);
+}
+/* ---------- MENU NAV DROPDOWN---------- */
+.cont_dropdown_men  ul  .dropdown-item{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--earthyellow);
+}
+.cont_dropdown_men ul .dropdown-item:hover{
+  background-color: var(--gray);
+}
+.cont_dropdown_women  ul  .dropdown-item{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--earthyellow);
+}
+.cont_dropdown_women ul .dropdown-item:hover{
+  background-color: var(--gray);
+}
+.cont_dropdown_accesorys  ul  .dropdown-item{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--earthyellow);
+}
+.cont_dropdown_accesorys ul .dropdown-item:hover{
+  background-color: var(--gray);
+}
+.cont_dropdown_electronics  ul  .dropdown-item{
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: var(--earthyellow);
+}
+.cont_dropdown_electronics ul .dropdown-item:hover{
+  background-color: var(--gray);
+}
+/* ---------- SECTION PRINCIPAL - PREGUNTAS 1 ---------- */
+#section_principal{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 6em;
+}
+#section_principal h2{
+  margin: 1em;
+  font-size: 40px;
+  font-weight: 500;
+  color: var(--white);
+}
+#section_principal p{
+  margin: 1em;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--white);
+}
+/* ---------- SECTION NOVEDADES ---------- */
+#section_novedades{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+  text-align: center;
+}
+.novedades_title h3{
+  margin: 1em;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white);
+}
+.cont_card_novedades{
+  display: flex;
+  margin: auto;
+}
+.cont_card_novedades > div{
+  margin: 1em;
+  padding: 1em;
+}
+.card-body{
+  display: flex;
+  flex-flow: column wrap;
+}
+.card-title{
+  font-size: 20px;
+  font-weight: 500;
+}
+.card-text{
+  font-size: 14px;
+}
+.card-body a{
+  margin: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--rufous);
+  text-decoration: none;
+}
+.card-body .btn{
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  padding: 8px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 12px;
+  border: 2px solid var(--black);
+  color: var(--white);
+  background-color: var(--earthyellow);
+}
+.card-body .btn:hover{
+  background-color: var(--gray);
+}
+/* ---------- BUTTON VER MAS ---------- */
+.btn_vermas{
+  display: flex;
+  justify-content: center;
+  width: 10%;
+  padding: 8px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 12px;
+  border: none;
+  color: var(--white);
+  background-color: var(--earthyellow);
+}
+.btn_vermas:hover{
+  background-color: var(--black);
+}
+/* ---------- SECTION MAS VENDIDOS ---------- */
+#section_masvendidos{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 6em;
+}
+.vendidos_title h3{
+  margin: 1em;
+  font-size: 30px;
+  font-weight: 500;
+  color: var(--white);
+}
+.cont_card_vendidos{
+  display: flex;
+  margin: auto;
+}
+.cont_card_vendidos > div{
+  margin: 1em;
+  padding: 1em;
+}
+/* ---------- SECTION CONTACT ---------- */
+
+#section_contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--black);
+  margin-top: 6em;
+}
+.cont_contact{
+  margin: 1em;
+  color: var(--white);
+}
+.cont_contact form{
+  display: flex;
+  flex-flow: column wrap;
+  padding: 1em;
+  color: var(--white);
+}
+form label{
+  margin: 1em;
+}
+form input{
+  width: 100%;
+  height: 2em;
+  padding: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 18px;
+  color: var(--white);
+  background-color: var(--earthyellow);
+}
+form textarea{
+  margin-bottom: 1em;
+  padding: 10px;
+  text-align: center;
+  border: none;
+  border-radius: 18px;
+  color: var(--white);
+  background-color: var(--earthyellow);
+}
+form button{
+  width: 25%;
+  margin: auto;
+  border: none;
+  border-radius: 18px;
+  background: none;
+  color: var(--white);
+}
+form button img{
+  width: 50px;
+  height: 50px;
+}
+/* ---------- SECTION FOOTER ---------- */
+#section_footer{
+  display:flex;
+  align-items: center;
+  flex-flow: column wrap;
+  padding: 1em;
+}
+.cont_social_media{
+  padding: 1em;
+}
+.cont_social_media a{
+  padding: 10px;
+}
+#section_footer p{
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
+
+/* ---------- MOBIL ---------- */
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+}
+
+/* ---------- TABLET ---------- */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  
+}
